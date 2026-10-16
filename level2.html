@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hong Kong Temperature Heatmap — Level 2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-level="2">
+  <nav aria-label="Visualization level">
+    <a href="level1.html">Level 1</a>
+    <a href="level2.html" aria-current="page">Level 2</a>
+  </nav>
+  <fieldset>
+    <legend>Cell color shows monthly:</legend>
+    <label><input name="measure" type="radio" value="max" checked> Maximum</label>
+    <label><input name="measure" type="radio" value="min"> Minimum</label>
+  </fieldset>
+  <div class="chart-container"><svg id="chart" aria-label="Daily temperature changes within year and month heatmap"></svg></div>
+  <div id="tooltip" class="tooltip" hidden></div>
+  <p id="error"></p>
+  <script src="js/d3.v3.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
